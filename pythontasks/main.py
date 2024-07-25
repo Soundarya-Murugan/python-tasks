@@ -9,9 +9,9 @@ templates = Jinja2Templates(directory="templates")
 
 # Example data (list of dictionaries)
 items = [
-    {"name": "Item 1", "description": "Description for Item 1"},
-    {"name": "Item 2", "description": "Description for Item 2"},
-    {"name": "Item 3", "description": "Description for Item 3"}
+    {"name": "Coffee", "description": "Coffee is a beverage brewed from roasted coffee beans."},
+    {"name": "Tea", "description": "tea, beverage produced by steeping in freshly boiled water the young leaves and leaf buds of the tea plant, Camellia sinensis."},
+    {"name": "Milk", "description": "Milk is an emulsion or colloid of butterfat globules within a water-based fluid that contains dissolved carbohydrates and protein aggregates with minerals."}
 ]
 
 # Define route to render HTML page
