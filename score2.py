@@ -3,7 +3,7 @@
 
 import json
 
-FILEPATH = 'city_score.json'
+FILEPATH = 'animal_score.json'
 
 def read_vanilla_json():
 
@@ -24,41 +24,41 @@ def read_json():
 
     score_obj = read_vanilla_json()
 
-    toronto_score = score_obj['toronto']
+    toronto_score = score_obj['lion']
 
-    print(f'[READ] toronto_score: {toronto_score}')
+    print(f'[READ] lion_score: {toronto_score}')
 
 # create new record (sharmila)
 def create_new_record():
 
     score = read_vanilla_json()
 
-    scaborough_score = 89
-    score['scaborough'] = scaborough_score
+    scaborough_score = 87
+    score['zebra'] = scaborough_score
 
     write_2_json(score)
 
-    print('[CREATE] scaborough score added in the file')
+    print('[CREATE] zebra score added in the file')
 
 # update kevin's score to 87
 def update_record():
 
     score = read_vanilla_json()
-    score['hyd'] = 81
+    score['tiger'] = 94
 
     write_2_json(score)
 
-    print('[UPDATE] hyd score updated in the file')
+    print('[UPDATE] tiger score updated in the file')
 
 # delete azar
 def delete_record():
 
     score = read_vanilla_json()
-    score.pop('bowmanville')
+    score.pop('giraffe')
 
     write_2_json(score)
 
-    print('[DELETE] bowmanville score deleted from the file')
+    print('[DELETE] giraffe score deleted from the file')
 
 
 read_json()

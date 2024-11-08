@@ -3,7 +3,7 @@
 
 import json
 
-FILEPATH = 'city_score.json'
+FILEPATH = 'product_score.json'
 
 def read_vanilla_json():
 
@@ -24,9 +24,9 @@ def read_json():
 
     score_obj = read_vanilla_json()
 
-    toronto_score = score_obj['toronto']
+    smartphone_score = score_obj['smartphone']
 
-    print(f'[READ] toronto_score: {toronto_score}')
+    print(f'[READ] smartphone_score: {smartphone_score}')
 
 # create new record (sharmila)
 def create_new_record():
@@ -34,31 +34,31 @@ def create_new_record():
     score = read_vanilla_json()
 
     scaborough_score = 89
-    score['scaborough'] = scaborough_score
+    score['smartwatch'] = scaborough_score
 
     write_2_json(score)
 
-    print('[CREATE] scaborough score added in the file')
+    print('[CREATE] smartwatch score added in the file')
 
 # update kevin's score to 87
 def update_record():
 
     score = read_vanilla_json()
-    score['hyd'] = 81
+    score['tablet'] = 86
 
     write_2_json(score)
 
-    print('[UPDATE] hyd score updated in the file')
+    print('[UPDATE] tablet score updated in the file')
 
 # delete azar
 def delete_record():
 
     score = read_vanilla_json()
-    score.pop('bowmanville')
+    score.pop('headphones')
 
     write_2_json(score)
 
-    print('[DELETE] bowmanville score deleted from the file')
+    print('[DELETE] headphones score deleted from the file')
 
 
 read_json()
